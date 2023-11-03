@@ -65,6 +65,7 @@ p {
     background-position: left;
     background-size: 100%;
     padding: 12px 80px 20px 60px;
+    // display: inline-block;
     @include media-breakpoint-down(sm) {
         padding: 12px 60px 18px 40px;
     }
@@ -145,6 +146,7 @@ body {
     background-image: url(../images/global-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     color: white;
     padding: 0;
     font-size: 14px;

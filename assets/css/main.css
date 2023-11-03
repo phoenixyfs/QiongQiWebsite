@@ -396,6 +396,7 @@ body {
   background-image: url(../images/global-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   color: white;
   padding: 0;
   font-size: 14px; }
@@ -830,6 +831,9 @@ iframe {
   width: 100%;
   height: 100%; }
 
+.landing-characters-title {
+  padding-left: calc(var(--bs-gutter-x) * 0.5); }
+
 .landing-characters h2 {
   color: #CFC19B; }
 
@@ -1126,3 +1130,71 @@ iframe {
 @media (max-width: 991.98px) {
   .about-character img {
     padding: 10px 0; } }
+
+.howtoplay-container {
+  background-image: url(../images/about/kv.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+.howtoplay-main {
+  position: relative;
+  border: solid 2px rgba(207, 193, 155, 0.5);
+  border-radius: 20px;
+  background-image: url(../images/howtoplay/gameplay-bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 80px;
+  margin-top: 80px; }
+  @media (max-width: 991.98px) {
+    .howtoplay-main {
+      padding: 60px; } }
+  @media (max-width: 767.98px) {
+    .howtoplay-main {
+      padding: 40px; } }
+  @media (max-width: 575.98px) {
+    .howtoplay-main {
+      padding: 40px 20px 20px 20px;
+      margin-top: 30px; } }
+  .howtoplay-main h1 {
+    position: absolute;
+    top: -44px;
+    left: 40px; }
+    @media (max-width: 575.98px) {
+      .howtoplay-main h1 {
+        top: -36px;
+        left: 10px; } }
+
+.howtoplay-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.howtoplay .feature-item-text {
+  padding: 0px 30px 30px 30px; }
+
+.playbtn {
+  top: 0;
+  left: 0;
+  width: 60px;
+  padding: 90px 0;
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.playbtn:hover {
+  opacity: 1; }

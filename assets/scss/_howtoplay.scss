@@ -1,0 +1,65 @@
+.howtoplay {
+    &-container {
+        background-image: url(../images/about/kv.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    &-main { 
+        position: relative;
+        border: solid 2px rgba($color: $color-second, $alpha: 0.5);
+        border-radius: 20px;
+        background-image: url(../images/howtoplay/gameplay-bg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding: 80px;
+        margin-top: 80px;
+        @include media-breakpoint-down(lg) {
+            padding: 60px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 40px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 40px 20px 20px 20px;
+            margin-top: 30px;
+        }
+        h1 {
+            position: absolute;
+            top: -44px;
+            left: 40px;
+            @include media-breakpoint-down(sm) {
+                top: -36px;
+                left: 10px;
+            }
+        }
+    }
+    &-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .feature-item-text {
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+
+
+.playbtn {
+    // position: absolute;
+    // margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 60px;
+    padding: 90px 0;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.playbtn:hover {
+    opacity: 1;
+}

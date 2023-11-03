@@ -68,7 +68,7 @@
 
     <div class="container section-padding">
         <div class="row landing-characters">
-            <div class="col-12 flex title-padding">
+            <div class="col-12 flex title-padding landing-characters-title">
                 <div><h1 class="no-margin title outerglow-yellow">遊戲獨特角色</h1></div>
                 <div class="main-button no-margin d-none d-sm-block"><a href="news.php">了解更多</a></div>
             </div>
