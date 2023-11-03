@@ -1,0 +1,209 @@
+
+// Color
+
+$color-main: #A092B6;
+$color-darkPurple: #161117;
+$color-second: #CFC19B;
+
+
+
+// Font
+
+@font-face {
+    font-family: 'Aoyagireisyosimo';
+    src: url('../font/aoyagireisyosimo.otf');
+  }
+
+h1 {
+    color: white;
+    // color: $color-main;
+    font-family: 'Aoyagireisyosimo';
+    font-size: 42px;
+    // font-weight: 700 !important;
+    line-height: 150%;
+    padding: 10px 0;
+    letter-spacing: 0.2rem;
+    @include media-breakpoint-down(xxl) {
+        font-size: 38px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    color: $color-main;
+    font-size: 24px;
+    line-height: 140%;
+    @include media-breakpoint-down(xl) {
+        font-size: 22px;
+    }
+    @include media-breakpoint-down(lg) {
+        font-size: 18px;
+    }
+}
+
+.sText {
+    font-size: 12px;
+    @include media-breakpoint-down(sm) {
+        font-size: 10px;
+    }
+}
+
+p {
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+
+
+.title {
+    background-image: url(../images/title-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    padding: 12px 80px 20px 60px;
+    @include media-breakpoint-down(sm) {
+        padding: 12px 60px 18px 40px;
+    }
+}
+
+.outerglow {
+    &-purple {
+        text-shadow:1px 1px 6px #CBA3E4, 1px 1px 20px #CBA3E4;
+    }
+    &-yellow {
+        text-shadow:1px 1px 6px #E2CFA9, 1px 1px 20px #E2CFA9;
+    }
+}
+
+
+
+// Position & Padding
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+.section-padding {
+    padding-bottom: 120px;
+    @include media-breakpoint-down(md) {
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 60px;
+    }
+}
+
+.title-padding {
+    padding-bottom: 20px;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 20px;
+    }
+}
+
+.page-padding {
+    padding-top: 100px;
+}
+
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+}
+
+
+
+
+
+
+// Global
+
+body {
+    background-color: #171218;
+    background-image: url(../images/global-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+
+//Button
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.main-button {
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 6px;
+    color: white;
+    transition: 0.5s;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    background: linear-gradient(to right bottom, var(--myColor1), var(--myColor2));
+    transition: --myColor1 0.5s, --myColor2 0.5s, color 0.5s;
+    -webkit-transition: --myColor1 0.5s, --myColor2 0.5s, color 0.5s;
+}
+.main-button:hover {
+    --myColor1: #A092B6;
+    --myColor2: #A092B6;
+    color: $color-darkPurple !important;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #60475B;
+    inherits: false;
+}
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #453842;
+    inherits: false;
+}
+
+
+
+// Scrollbar Style
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

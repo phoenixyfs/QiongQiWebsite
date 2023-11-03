@@ -1,0 +1,263 @@
+.kv {
+    position: relative;
+    height: 900px;
+    background-image: url(../images/landing/kv001.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    z-index: 1;
+    @include media-breakpoint-down(sm) {
+        height: 600px;
+    }
+}
+.landing-news {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 120px;
+    right: 0;
+    bottom: 0;
+    padding: 0 14vw 0 30px;
+    background-image: url(../images/landing/landing-news-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    @include media-breakpoint-down(xl) {
+        padding: 0 10vw 0 30px;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 70vw;
+        padding: 0 10vw 0 30px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 98vw;
+        padding: 20px 20px 20px 15px;
+    }
+    img {
+        width: 8px;
+        height: 12px;
+        margin-right: 20px;
+        @include media-breakpoint-down(xl) {
+            margin-right: 10px;
+        }
+    }
+    &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: solid 1px $color-second;
+        border-radius: 6px;
+        padding: 5px 5px 5px 20px;
+        margin: 3px 0;
+        @include media-breakpoint-down(sm) {
+            padding: 5px 5px 5px 10px;
+        }
+        &-date {
+            padding-right: 20px;
+            min-width: 110px;
+            @include media-breakpoint-down(xl) {
+                padding-right: 10px;
+                min-width: 100px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-right: 5px;
+                min-width: 80px;
+            }
+        }
+        &-btnFrame {
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+            right: 3px;
+        }
+        &-btn {
+            float: right;
+            padding: 2px 10px;
+            color: $color-darkPurple;
+            border-radius: 4px;
+            background-color: $color-second;
+            padding: 2px 10px;
+            color: $color-darkPurple;
+            border-radius: 4px;
+        }
+    }
+}
+.landing-news-item-btnFrame:hover {
+    opacity: 1;
+}
+
+
+
+
+
+.landing-about {
+    position: relative;
+    height: 500px;
+    z-index: 0;
+    @include media-breakpoint-down(md) {
+        height: 550px;
+    }
+    &-offset {
+        position: absolute;
+        top: -50px;
+        background-image: url(../images/landing/about-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+        padding-top: 150px;
+        padding-bottom: 120px;
+        @include media-breakpoint-down(md) {
+            padding-top: 120px;
+            height: 600px;
+        }
+    }
+    &-content {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+    }
+    &-text {
+        z-index: 1;
+        p {
+            // padding: 1rem 0;
+        }
+    }
+    .main-button {
+        margin-top: 15px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 10px;
+        }
+    }
+    &-img {
+        position: absolute;
+        right: 0;
+        bottom: -50px;
+        width: 58vw;
+        max-width: 1000px;
+        padding: 0;
+        @include media-breakpoint-down(xl) {
+            width: 62vw;
+        }
+        @include media-breakpoint-down(lg) {
+            width: 70vw;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 95vw;
+            bottom: -20px;
+        }
+    }
+}
+
+
+
+.landing-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // @include media-breakpoint-down(sm) {
+    //     padding-right: calc(var(--bs-gutter-x) * 1);
+    //     padding-left: calc(var(--bs-gutter-x) * 1);
+    // }
+}
+
+
+
+.landing-characters {
+    h2 {
+        color: $color-second;
+        // color: linear-gradient(to right bottom, $color-second, $color-darkPurple);
+    }
+    img {
+        margin-bottom: 20px;
+        border-radius: 3px;
+    }
+    &-item {
+        position: relative;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) *0.5);
+        &-frame {
+            border: solid 2px rgba($color: #CFC19B, $alpha: 0.5);
+            border-radius: 16px;
+            padding: 10px 10px 30px 10px;
+            background-color: black;
+            @include media-breakpoint-down(sm) {
+                padding: 6px 6px 30px 6px;
+            }
+        }
+        &-text {
+            padding: 0 15px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 20px;
+            padding-right: calc(var(--bs-gutter-x) * 1);
+            padding-left: calc(var(--bs-gutter-x) * 1);
+        }
+        &-btn {
+            position: absolute;
+            bottom: 2px;
+            left: 40px;
+            padding: 4px 12px;
+            background-color: $color-second;
+            color: $color-darkPurple;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            border-radius: 10px 10px 0 0;
+            opacity: 0.6;
+            transition: 0.5s;
+            @include media-breakpoint-down(sm) {
+                bottom: 22px;
+            }
+        }
+        img {
+            border-radius: 8px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .main-button {
+            margin-bottom: 30px;
+        }
+    }
+}
+.landing-characters-item-btn:hover {
+    opacity: 1;
+}
+
+
+
+.landing-purchase {
+    position: relative;
+    height: 600px;
+    background-image: url(../images/landing/purchase-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+        height: 400px;
+    }
+    &-text {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-down(sm) {
+            left: 0;
+        }
+    }
+}
