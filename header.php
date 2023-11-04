@@ -1,4 +1,16 @@
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo $base_url; ?>assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo $base_url; ?>assets/images/favicon/safari-pinned-tab.svg" color="#161117">
+    <meta name="msapplication-TileColor" content="#161117">
+    <meta name="theme-color" content="#161117">
+    <!-- favicon -->   
+   
+   
+   
+   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;800&display=swap" rel="stylesheet">
