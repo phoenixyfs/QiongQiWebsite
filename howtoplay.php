@@ -24,7 +24,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="howtoplay-main">
-                            <h1 class="title outerglow-yellow">遊戲玩法</h1>
+                            <h1 class="title outerglow-yellow">&nbsp;&nbsp;遊戲玩法&nbsp;&nbsp;</h1>
                             <img class="full-width d-none d-sm-block" src="assets/images/howtoplay/gameplay.png" alt="Qiong Qi">
                             <img class="full-width d-block d-sm-none" src="assets/images/howtoplay/gameplay-m.png" alt="Qiong Qi">
                         </div>

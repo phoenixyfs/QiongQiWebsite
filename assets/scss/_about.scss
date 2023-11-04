@@ -67,6 +67,10 @@
             background-color: $color-darkPurple;
             padding: 240px 30px 30px 30px;
             min-height: 380px;
+            @include media-breakpoint-down(sm) {
+                padding: 190px 30px 30px 30px;
+                min-height: 300px;
+            }
             h2 {
                 color: white;
             }

@@ -82,6 +82,7 @@
             padding: 2px 10px;
             color: $color-darkPurple;
             border-radius: 4px;
+            font-weight: 700;
         }
     }
 }
@@ -140,6 +141,7 @@
         width: 58vw;
         max-width: 1000px;
         padding: 0;
+        z-index: 0 !important;
         @include media-breakpoint-down(xl) {
             width: 62vw;
         }
@@ -154,10 +156,20 @@
 }
 
 
+.landing-howtoplay {
+    z-index: 1;
+    @include media-breakpoint-down(sm) {
+        padding-top: 30px;
+        padding-left: calc(var(--bs-gutter-x) * 0.8);
 
+    }
+}
 .landing-video {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
 }
 iframe{
     position: absolute;
@@ -165,17 +177,14 @@ iframe{
     left: 0;
     width: 100%;
     height: 100%;
-    // @include media-breakpoint-down(sm) {
-    //     padding-right: calc(var(--bs-gutter-x) * 1);
-    //     padding-left: calc(var(--bs-gutter-x) * 1);
-    // }
+
 }
 
 
 
 .landing-characters {
     &-title {
-        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.8);
     }
     h2 {
         color: $color-second;

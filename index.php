@@ -58,9 +58,15 @@
 
     <div class="container section-padding">
         <div class="row">
-            <!-- <div class="title-padding"><h1>介紹影片</h1></div> -->
+            <div class="col-12 flex landing-howtoplay">
+                <h1 class="title outerglow-yellow">&nbsp;遊戲玩法&nbsp;</h1>
+                <div class="main-button no-margin d-none d-sm-block"><a href="news.php">了解更多</a></div>
+            </div>
             <div class="landing-video">
                 <iframe src="https://www.youtube.com/embed/V2XtngoGPrA?si=-mWmo4z8ns2tYeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 flex title-padding">
+                <div class="main-button no-margin d-block d-sm-none"><a href="characters.php">了解更多</a></div>
             </div>
         </div>
     </div>
