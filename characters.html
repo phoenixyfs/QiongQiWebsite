@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' />
+        <title>山海經——窮奇 | 最新消息</title>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#161117">
+        <meta name="msapplication-TileColor" content="#161117">
+        <meta name="theme-color" content="#161117">
+        <!-- favicon -->   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bower_components/aos/dist/aos.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <div id="container-fluid">
+                <div class="no-padding flex">
+                    <div class="col-3 logo">
+                        <a href="index.html"><img class="header-logo" src="assets/images/qiongqi_logo_white.png" alt=""></a>
+                    </div>
+                    <!-- Desktop -->
+                    <div class="col-9 d-none d-lg-block header-nav">
+                        <a href="index.html" class="nav-item">主頁</a>
+                        <a href="about.html" class="nav-item">了解窮奇</a>
+                        <a href="howtoplay.html" class="nav-item">遊戲玩法</a>
+                        <a href="characters.html" class="nav-item nav-item-active">角色介紹</a>
+                        <a href="news.html" class="nav-item">最新資訊</a>
+                        <a href="#" class="download-btn">立即下載</a>
+                    </div> 
+
+                    <!-- Mobile -->
+                    <div class="col-9 d-lg-none header-nav-mobile">
+                        <div id="menuToggle">
+                            <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+                            <input type="checkbox" />
+                            <!-- Some spans to act as a hamburger.-->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            
+                            <ul id="menuMobile">
+                                <a href="index.html" class="nav-item"><li>主頁</li></a>
+                                <a href="about.html" class="nav-item"><li>了解窮奇</li></a>
+                                <a href="howtoplay.html" class="nav-item"><li>遊戲玩法</li></a>
+                                <a href="characters.html" class="nav-item nav-item-active"><li>角色介紹</li></a>
+                                <a href="news.html" class="nav-item"><li>最新資訊</li></a>
+                                <a href="#" class="download-btn">立即下載</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content -->
+        <div class="container page-padding">
+            <div class="row landing-about">
+            <h1>角色介紹</h1>
+            </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div class="row footer flex sText">
+                <div class="col-6 no-padding">
+                    Copyright © 2023 Qiong Qi Limited. All rights reserved.
+                </div>
+                <div class="col-6 no-padding follow">
+                    追蹤我們
+                    <!-- <a href="#" class="" target="_blank"><img class="full-width" src="assets/images/icon/fb.png" alt="Facebook"></a> -->
+                    <a href="https://www.instagram.com/ntut.qiongqi" class="" target="_blank"><img class="full-width" src="assets/images/icon/ig.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- JS -->
+        <script type="text/javascript" src="assets/js/main-dist.js"></script>
+        <script type="text/javascript" src="bower_components/aos/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            speed: 600,
+            parallax: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+        <!-- JS End -->
+
+    </body>
+
+</html>
