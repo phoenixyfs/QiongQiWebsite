@@ -815,7 +815,7 @@ iframe {
       left: -200px;
       top: 50px;
       width: auto;
-      height: 240px; } }
+      height: 320px; } }
   .about-map-title {
     position: absolute;
     top: 40px;
@@ -864,7 +864,8 @@ iframe {
         padding: 70px 30px 50px 30px; } }
     @media (max-width: 575.98px) {
       .about-map-text {
-        padding: 25px; } }
+        padding: 25px 15px 0px 25px;
+        min-height: 360px; } }
 
 .about-character .main-button {
   margin-top: 10px; }

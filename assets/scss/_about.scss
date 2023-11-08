@@ -177,7 +177,7 @@
         left: -200px;
         top: 50px;
         width: auto;
-        height: 240px;
+        height: 320px;
     }
     &-title {
         position: absolute;
@@ -222,8 +222,8 @@
             // min-height: 300px;
         }
         @include media-breakpoint-down(sm) {
-            padding: 25px;
-            // min-height: 270px;
+            padding: 25px 15px 0px 25px;
+            min-height: 360px;
         }
     }
 }
