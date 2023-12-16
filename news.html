@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -70,7 +71,7 @@
         <!-- Content -->
         <div class="container page-padding">
             <div class="row news-title">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1200">
                     <h1 class="title outerglow-yellow">最新消息</h1>
                 </div>
             </div>
@@ -78,7 +79,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-xs-12 news-content">
-                    <div class="news-list">
+                    <div class="news-list" data-aos="flip-right" data-aos-duration="800">
                         <img class="full-width" src="assets/images/news/news_1.png" alt="Qiong Qi">
                         <div class="news-list-text">
                             <div class="news-list-date">2024.1.2</div>
@@ -88,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12 news-content">
-                    <div class="news-list">
+                    <div class="news-list" data-aos="flip-right" data-aos-duration="1200">
                         <img class="full-width" src="assets/images/news/news_2.png" alt="Qiong Qi">
                         <div class="news-list-text">
                             <div class="news-list-date">2023.12.24</div>
@@ -98,7 +99,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12 news-content">
-                    <div class="news-list">
+                    <div class="news-list" data-aos="flip-right" data-aos-duration="1600">
                         <img class="full-width" src="assets/images/news/news_3.png" alt="Qiong Qi">
                         <div class="news-list-text">
                             <div class="news-list-date">2023.12.20</div>
@@ -115,7 +116,7 @@
         <div class="container-fluid">
             <div class="row footer flex sText">
                 <div class="col-6 no-padding">
-                    Copyright © 2023 Qiong Qi. <br class="d-block d-sm-none"> All rights reserved.
+                    Copyright © 2024 Qiong Qi. <br class="d-block d-sm-none"> All rights reserved.
                 </div>
                 <div class="col-6 no-padding follow">
                     追蹤我們
@@ -129,6 +130,9 @@
         <!-- JS -->
         <script type="text/javascript" src="assets/js/main-dist.js"></script>
         <script type="text/javascript" src="assets/js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
         <script>

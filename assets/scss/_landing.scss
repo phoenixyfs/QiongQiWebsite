@@ -198,6 +198,7 @@ iframe{
         position: relative;
         padding-right: calc(var(--bs-gutter-x) * 0.5);
         padding-left: calc(var(--bs-gutter-x) *0.5);
+        transition: all 1s;
         &-frame {
             border: solid 2px rgba($color: #CFC19B, $alpha: 0.5);
             border-radius: 16px;
@@ -218,7 +219,7 @@ iframe{
         }
         &-btn {
             position: absolute;
-            bottom: 2px;
+            bottom: 0px;
             left: 40px;
             padding: 4px 12px;
             background-color: $color-second;
@@ -243,8 +244,13 @@ iframe{
     }
 }
 .landing-characters-item-btn:hover {
+    cursor: pointer;
     opacity: 1;
 }
+.landing-characters-item:hover {
+    transform: scale(1.02,1.02);
+}
+
 
 
 

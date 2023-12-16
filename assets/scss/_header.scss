@@ -162,6 +162,7 @@
 
 
 .download-btn {
+    display: inline-block;
     color: white;
     padding: 15px 40px;
     margin-left: 10px;
@@ -178,6 +179,8 @@
     }
   }
 .download-btn:hover {
+    animation: headShake;
+    animation-duration: 1s;
     --myColor1: #A092B6;
     --myColor2: #A092B6;
     color: $color-darkPurple !important;

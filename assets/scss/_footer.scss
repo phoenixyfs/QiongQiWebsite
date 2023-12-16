@@ -8,7 +8,14 @@
 .follow {
     text-align: right;
     img {
+        transition: all 1s;
         width: 32px;
         margin-left: 12px;
     }
+}
+
+.follow img:hover {
+    transform: scale(1.15,1.15);
+    animation: heartBeat;
+    animation-duration: 1s;
 }

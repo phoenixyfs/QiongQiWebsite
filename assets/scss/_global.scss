@@ -187,6 +187,8 @@ a {
     --myColor1: #A092B6;
     --myColor2: #A092B6;
     color: $color-darkPurple !important;
+    animation: headShake;
+    animation-duration: 1s;
 }
 
 @property --myColor1 {
@@ -199,6 +201,7 @@ a {
     initial-value: #453842;
     inherits: false;
 }
+
 
 
 

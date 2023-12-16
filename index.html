@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -38,7 +39,7 @@
                         <a href="howtoplay.html" class="nav-item">遊戲玩法</a>
                         <a href="characters.html" class="nav-item">角色介紹</a>
                         <a href="news.html" class="nav-item">最新資訊</a>
-                        <a href="#" class="download-btn">立即下載</a>
+                        <a href="#" class="download-btn animate__animated animate__tada">立即下載</a>
                     </div> 
 
                     <!-- Mobile -->
@@ -70,7 +71,7 @@
         <!-- KV -->
         <div class="container-fluid">
             <div class="row kv">
-                <div class="landing-news">
+                <div class="landing-news animate__animated animate__bounceInRight">
                     <a href="news.html" class="">
                         <div class="landing-news-item">
                             <img class="full-width" src="assets/images/landing/news-arrow.png" alt="">
@@ -99,9 +100,12 @@
                     <div class="row landing-about-content">
                         <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9 col-xs-12 landing-about-text">
                             <!-- <img class="full-width" src="assets/images/landing/landing-title.png" alt="Qiong Qi"> -->
-                            <h1 class="outerglow-purple">善惡一念間<br>在奇幻山海中尋找自我</h1>
-                            <p>以《山海經》為背景，玩家將化身為能夠變身成窮奇的人。你可在遊戲中獲得由生成式AI帶來的個人化體驗、解謎、打鬥等娛樂，最後故事將在你的選擇之下導向不同的遊戲結局。</p>
-                            <div class="main-button"><a href="about.html" class="">了解更多</a></div>
+                            <h1 class="outerglow-purple" data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom" data-aos-offset="150" data-aos-duration="800">善惡一念間<br>在奇幻山海中尋找自我</h1>
+                            <p data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom" data-aos-offset="150" data-aos-duration="1100">以《山海經》為背景，玩家將化身為能夠變身成窮奇的人。你可在遊戲中獲得由生成式AI帶來的個人化體驗、解謎、打鬥等娛樂，最後故事將在你的選擇之下導向不同的遊戲結局。</p>
+                            <div data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom" data-aos-offset="150" data-aos-duration="1100"><a href="about.html" class="main-button">了解更多</a></div>
                         </div>
                         <!-- <div class="col-md-6 col-sm-12">
                             <img class="full-width" src="assets/images/landing/section2-img.jpg" alt="Qiong Qi">
@@ -119,10 +123,12 @@
         <div class="container section-padding">
             <div class="row">
                 <div class="col-12 flex landing-howtoplay">
-                    <h1 class="title outerglow-yellow">&nbsp;遊戲玩法&nbsp;</h1>
-                    <div class="main-button no-margin d-none d-sm-block"><a href="news.html">了解更多</a></div>
+                    <h1 class="title outerglow-yellow" data-aos="fade-right" data-aos-offset="100"
+                    data-aos-easing="ease-in-sine">&nbsp;遊戲玩法&nbsp;</h1>
+                    <div class="no-margin d-none d-sm-block" data-aos="fade-left" data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"><a href="news.html" class="main-button">了解更多</a></div>
                 </div>
-                <div class="landing-video">
+                <div class="landing-video" data-aos="zoom-in-up" data-aos-duration="1000">
                     <iframe src="https://www.youtube.com/embed/V2XtngoGPrA?si=-mWmo4z8ns2tYeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="col-12 flex title-padding">
@@ -136,11 +142,13 @@
         <div class="container section-padding">
             <div class="row landing-characters">
                 <div class="col-12 flex title-padding landing-characters-title">
-                    <div><h1 class="no-margin title outerglow-yellow">遊戲獨特角色</h1></div>
-                    <div class="main-button no-margin d-none d-sm-block"><a href="news.html">了解更多</a></div>
+                    <div><h1 class="no-margin title outerglow-yellow" data-aos="fade-right" data-aos-offset="100"
+                        data-aos-easing="ease-in-sine">遊戲獨特角色</h1></div>
+                    <div class="no-margin d-none d-sm-block" data-aos="fade-left" data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"><a href="news.html" class="main-button ">了解更多</a></div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-12 landing-characters-item">
-                    <div class="landing-characters-item-frame">
+                    <div class="landing-characters-item-frame" data-aos="flip-right"data-aos-duration="1000">
                         <img class="full-width" src="assets/images/landing/character01.png" alt="Qiong Qi">
                         <div class="landing-characters-item-text">
                             <h2>主角——穹</h2>
@@ -150,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-12 landing-characters-item">
-                    <div class="landing-characters-item-frame">
+                    <div class="landing-characters-item-frame" data-aos="flip-right" data-aos-duration="1000" data-aos-offset="300">
                         <img class="full-width" src="assets/images/landing/character02.png" alt="Qiong Qi">
                         <div class="landing-characters-item-text">
                             <h2>青丘商店老闆——修</h2>
@@ -160,7 +168,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 d-none d-lg-block landing-characters-item">
-                    <div class="landing-characters-item-frame">
+                    <div class="landing-characters-item-frame" data-aos="flip-right" data-aos-duration="1000" data-aos-offset="450">
                         <img class="full-width" src="assets/images/landing/character03.png" alt="Qiong Qi">
                         <div class="landing-characters-item-text">
                             <h2>神秘商人——鴟</h2>
@@ -180,7 +188,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 landing-purchase">
-                    <div class="col-md-6 col-sm-12 landing-purchase-text">
+                    <div class="col-md-6 col-sm-12 landing-purchase-text" data-aos="flip-right" ata-aos="flip-right"data-aos-duration="1000" data-aos-offset="350">
                         <h1 class="outerglow-purple">立即展開奇幻旅程</h1>
                         <div class="main-button"><a href="#">按此下載</a></div>
                     </div>
@@ -193,7 +201,7 @@
         <div class="container-fluid">
             <div class="row footer flex sText">
                 <div class="col-6 no-padding">
-                    Copyright © 2023 Qiong Qi. <br class="d-block d-sm-none"> All rights reserved.
+                    Copyright © 2024 Qiong Qi. <br class="d-block d-sm-none"> All rights reserved.
                 </div>
                 <div class="col-6 no-padding follow">
                     追蹤我們
@@ -208,6 +216,9 @@
         <!-- JS -->
         <script type="text/javascript" src="assets/js/main-dist.js"></script>
         <script type="text/javascript" src="assets/js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
         <script>
