@@ -96,7 +96,7 @@
 
 .landing-about {
     position: relative;
-    height: 500px;
+    height: 600px;
     z-index: 0;
     @include media-breakpoint-down(md) {
         height: 550px;
@@ -104,14 +104,14 @@
     &-offset {
         position: absolute;
         top: -50px;
-        background-image: url(../images/landing/about-bg.png);
+        // background-image: url(../images/landing/about-bg.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 550px;
-        padding-top: 150px;
-        padding-bottom: 120px;
+        min-height: 600px;
+        padding-top: 180px;
+        // padding-bottom: 200px;
         @include media-breakpoint-down(md) {
             padding-top: 120px;
             height: 600px;

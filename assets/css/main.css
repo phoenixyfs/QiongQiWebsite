@@ -124,9 +124,10 @@ p {
 
 body {
   background-color: #171218;
-  background-image: url(../images/global-bg.jpg);
+  background-image: url(../images/about/kv.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   color: white;
   padding: 0;
@@ -527,7 +528,7 @@ a {
 
 .landing-about {
   position: relative;
-  height: 500px;
+  height: 600px;
   z-index: 0; }
   @media (max-width: 767.98px) {
     .landing-about {
@@ -535,14 +536,12 @@ a {
   .landing-about-offset {
     position: absolute;
     top: -50px;
-    background-image: url(../images/landing/about-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 550px;
-    padding-top: 150px;
-    padding-bottom: 120px; }
+    min-height: 600px;
+    padding-top: 180px; }
     @media (max-width: 767.98px) {
       .landing-about-offset {
         padding-top: 120px;

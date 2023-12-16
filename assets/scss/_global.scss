@@ -151,13 +151,22 @@ p {
 
 body {
     background-color: #171218;
-    background-image: url(../images/global-bg.jpg);
+    // background-image: url(../images/global-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+    background-image: url(../images/about/kv.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     color: white;
     padding: 0;
     font-size: 14px;
+}
+
+.landing {
+
 }
 
 
