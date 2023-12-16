@@ -1,0 +1,110 @@
+.characters {
+    background-image: url(../images/about/kv.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    &-intro {
+        padding-top: 60px;
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+        }
+        h1 {
+            font-size: 56px;
+        }
+        h2 {
+            color: white;
+        }
+    }
+    &-bg {
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100%;
+        padding-top: 120px;
+        @include media-breakpoint-down(xl) {
+            background-size: 110%;
+        }
+        @include media-breakpoint-down(md) {
+            padding-top: 300px;
+            background-size: 100%;
+            background-position: center -40px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 250px;
+            background-size: 110%;
+            background-position: center top;
+        }
+    }
+    &-bg1 {
+        background-image: url(../images/characters/bg1.png);
+        @include media-breakpoint-down(md) {
+            background-image: url(../images/characters/bg1_2.png);
+        }
+    }
+    &-bg2 {
+        background-image: url(../images/characters/bg2.png);
+        @include media-breakpoint-down(md) {
+            background-image: url(../images/characters/bg2_2.png);
+        }
+    }
+    &-bg3 {
+        background-image: url(../images/characters/bg3.png);
+        @include media-breakpoint-down(md) {
+            background-image: url(../images/characters/bg3_2.png);
+        }
+    }
+    &-bg4 {
+        background-image: url(../images/characters/bg4.png);
+        @include media-breakpoint-down(md) {
+            background-image: url(../images/characters/bg4_2.png);
+        }
+    }
+    .swiper {
+        @include media-breakpoint-down(lg) {
+            padding-top: 100px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 20px;
+        }
+    }
+    .swiper-slide {
+        border: solid 1px rgba($color: $color-main, $alpha: 0.5);
+        border-radius: 12px;
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+    .swiper-slide-active {
+        border: solid 1px $color-main;
+        opacity: 1;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
+
+
+
+// .swiper-slide {
+//     width: 80%;
+// }
+
+// .swiper-slide:nth-child(2n) {
+//     width: 60%;
+//   }
+
+// .swiper-slide:nth-child(3n) {
+//     width: 40%;
+//   }

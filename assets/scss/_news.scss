@@ -1,0 +1,45 @@
+.news {
+    background-image: url(../images/about/kv.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    h2 {
+        color: $color-second;
+    }
+    &-title {
+        padding-bottom: 30px;
+    }
+    &-content {
+        padding-bottom: 100px;
+        @include media-breakpoint-down(xl) {
+            padding-bottom: 30px;
+        }
+    }
+    &-list {
+        background-color: $color-darkPurple;
+        border-radius: 16px;
+        height: 100%;
+        // margin-bottom: 30px;
+        img {
+            border-radius: 16px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        &-text {
+            position: relative;
+            padding: 35px 30px 30px 30px;
+            height: auto;
+        }
+        &-date {
+            position: absolute;
+            background-color: $color-purple;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 99px;
+            font-weight: 600;
+            top: -12px;
+        }
+    }
+}
