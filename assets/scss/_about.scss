@@ -40,9 +40,11 @@
 
 
 
+
 .feature {
     width: 100%;
     overflow: scroll;
+    overflow-y: hidden; /* Hide vertical scrollbar */
     margin-bottom: 120px;
     @include media-breakpoint-down(md) {
         margin-bottom: 80px;
@@ -65,6 +67,7 @@
         &-text {
             border-radius: 20px;
             background-color: $color-darkPurple;
+            height: 100%;
             padding: 240px 30px 30px 30px;
             min-height: 380px;
             @include media-breakpoint-down(sm) {
@@ -110,9 +113,8 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 .feature::-webkit-scrollbar {
     width: 0;
-// display: none;
+    display: none;
 }
-
 
 
 
