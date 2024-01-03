@@ -1,3 +1,2 @@
+// @prepros-prepend jquery.magnific-popup.min.js
 //@prepros-prepend aos.js
-//@prepros-prepend global.js
-//@prepros-prepend header.js

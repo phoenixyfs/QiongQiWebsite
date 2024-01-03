@@ -4,10 +4,14 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    &::after {
+        transition: background-image 0.5s;
+    }
     &-intro {
         padding-top: 60px;
         @include media-breakpoint-down(md) {
             padding-top: 40px;
+            min-height: 320px;
         }
         h1 {
             font-size: 56px;

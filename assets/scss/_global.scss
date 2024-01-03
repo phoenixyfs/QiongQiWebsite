@@ -229,3 +229,32 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: transparent;
 }
+
+
+
+/*popup*/
+.popup-tutorial {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 99;
+    &-wrapper {
+        padding: 60px 50px;
+        background-color: transparent;
+        // background: rgba($color: $color-darkPurple, $alpha: 0.9);
+        color: white;
+        border-radius: 16px;
+        @include media-breakpoint-down(md) {
+            padding: 40px 15px;
+        }
+    }
+}
+.popup-tutorial .mfp-close {
+    color: white !important;
+    font-size: 30px !important;
+    font-weight: 100;
+    transition: 0.5s;
+    @include media-breakpoint-down(md) {
+        font-size: 20px !important;
+    }
+}

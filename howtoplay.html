@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
@@ -90,7 +91,7 @@
                 <div class="feature-mcontainer">
                     <div class="col-lg-4 col-sm-6 col-xs-12 feature-item">
                         <div class="feature-item-text feature-item-bg1 howtoplay-video" data-aos="flip-right" data-aos-duration="800">
-                            <img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi">
+                            <a href="#tutorial-1" class="open-popup"><img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi"></a>
                             <div class="height100">
                                 <h2 class="outerglow-purple">基本攻擊</h2>
                                 <p>按滑鼠左鍵可進行基本攻擊，按住右鍵可進行蓄力攻擊</p>
@@ -99,7 +100,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-12 feature-item">
                         <div class="feature-item-text feature-item-bg2 howtoplay-video" data-aos="flip-right" data-aos-duration="1200">
-                            <img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi">
+                            <a href="#tutorial-2" class="open-popup"><img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi"></a>
                             <div class="height100">
                                 <h2 class="outerglow-purple">技能</h2>
                                 <p>隨著故事情節，主角會學到不同技能，按『Z』，能使出凶虎襲(衝刺位移)，按『X』能使出奇襲斬(範圍攻擊)。</p>
@@ -108,16 +109,56 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-12 feature-item">
                         <div class="feature-item-text feature-item-bg3 howtoplay-video" data-aos="flip-right" data-aos-duration="1600">
-                            <img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi">
+                            <a href="#tutorial-3" class="open-popup"><img class="full-width playbtn" src="assets/images/howtoplay/playbtn.png" alt="Qiong Qi"></a>
                             <div class="height100">
                                 <h2 class="outerglow-purple">獸人狀態轉換</h2>
                                 <p>透過不斷攻擊來獲取能量，當蓄滿能量條後，按『C』便能釋放窮奇之力，進入獸人化的狀態。</p>
                             </div>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
             <!-- Video End -->
+            
+
+
+            <!-- Pop up Content -->
+            <div id="tutorial-1" class="popup-tutorial mfp-hide">
+                <div class="popup-tutorial-wrapper">
+                    <div class="col-12">
+                        <!-- <h2>基本攻擊</h2>
+                        <p>按滑鼠左鍵可進行基本攻擊，按住右鍵可進行蓄力攻擊</p> -->
+                        <div class="landing-video" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <iframe src="https://www.youtube.com/embed/V2XtngoGPrA?si=-mWmo4z8ns2tYeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tutorial-2" class="popup-tutorial mfp-hide">
+                <div class="popup-tutorial-wrapper">
+                    <div class="col-12">
+                        <!-- <h2>技能</h2>
+                        <p>隨著故事情節，主角會學到不同技能，按『Z』，能使出凶虎襲(衝刺位移)，按『X』能使出奇襲斬(範圍攻擊)。</p> -->
+                        <div class="landing-video" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <iframe src="https://www.youtube.com/embed/V2XtngoGPrA?si=-mWmo4z8ns2tYeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tutorial-3" class="popup-tutorial mfp-hide">
+                <div class="popup-tutorial-wrapper">
+                    <div class="col-12">
+                        <!-- <h2>獸人狀態轉換</h2>
+                        <p>透過不斷攻擊來獲取能量，當蓄滿能量條後，按『C』便能釋放窮奇之力，進入獸人化的狀態。</p> -->
+                        <div class="landing-video" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <iframe src="https://www.youtube.com/embed/V2XtngoGPrA?si=-mWmo4z8ns2tYeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+              <!-- Pop up Content End -->
 
             <!-- Footer -->
             <div class="container-fluid">
@@ -137,10 +178,23 @@
         </div>
     
         <!-- JS -->
-        <script type="text/javascript" src="assets/js/main-dist.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
         <script type="text/javascript" src="assets/js/aos.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script type="text/javascript" src="assets/js/jquery.magnific-popup.js"></script>
         <script>
+
             AOS.init();
+
+            /* popup */
+            $(function(){
+                $('.open-popup').magnificPopup({
+                    type:'inline',
+                    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+                });
+            });
+
         </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
@@ -159,6 +213,21 @@
             },
             });
         </script>
+        <!-- <script>
+            // Get the elements by their ID
+            var popupLink = document.getElementById("popup-link");
+            var popupWindow = document.getElementById("popup-window");
+            var closeButton = document.getElementById("close-button");
+            // Show the pop-up window when the link is clicked
+            popupLink.addEventListener("click", function(event) {
+              event.preventDefault();
+              popupWindow.style.display = "block";
+            });
+            // Hide the pop-up window when the close button is clicked
+            closeButton.addEventListener("click", function() {
+              popupWindow.style.display = "none";
+            });
+          </script>  -->
         <!-- JS End -->
 
     </body>
