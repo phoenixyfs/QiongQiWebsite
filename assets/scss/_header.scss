@@ -9,9 +9,9 @@
 }
 
 .header-logo {
-    width: 120px;
-    @include media-breakpoint-down(xs) {
-        width: 90px;
+    width: 160px;
+    @include media-breakpoint-down(lg) {
+        width: 120px;
     }
 }
 

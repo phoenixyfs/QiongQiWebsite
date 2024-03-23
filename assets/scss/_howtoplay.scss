@@ -8,7 +8,7 @@
     }
     &-main { 
         position: relative;
-        border: solid 2px rgba($color: $color-second, $alpha: 0.5);
+        // border: solid 2px rgba($color: $color-second, $alpha: 0.5);
         border-radius: 20px;
         background-image: url(../images/howtoplay/gameplay-bg.png);
         background-repeat: no-repeat;
@@ -66,4 +66,70 @@
 .playbtn:hover {
     opacity: 1;
     transform: scale(1.15,1.15);
+}
+
+
+
+.tutorial {
+    // width: 100%;
+    // overflow: scroll;
+    // overflow-y: hidden; /* Hide vertical scrollbar */
+    // margin-bottom: 120px;
+    // @include media-breakpoint-down(md) {
+    //     margin-bottom: 80px;
+    // }
+    // @include media-breakpoint-down(sm) {
+    //     margin-bottom: 60px;
+    // }
+    // &-mcontainer {
+    //     display: inline-flex;
+    // }
+    &-item {
+        // z-index: 2;
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // @include media-breakpoint-down(lg) {
+        //     width: 300px;
+        //     padding-left: 0px;
+        //     padding-right: 30px;
+        // }
+        // &-text {
+        //     border-radius: 20px;
+        //     background-color: $color-darkPurple;
+        //     height: 100%;
+        //     padding: 240px 30px 30px 30px;
+        //     min-height: 380px;
+        //     @include media-breakpoint-down(sm) {
+        //         padding: 190px 30px 30px 30px;
+        //         min-height: 300px;
+        //     }
+        //     h2 {
+        //         color: white;
+        //     }
+        //     p {
+        //         margin-bottom: 0;
+        //     }
+        // }
+        &-bg1 {
+            background-image: url(../images/howtoplay/tutorial-bg1.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100%;
+        }
+        &-bg2 {
+            background-image: url(../images/howtoplay/tutorial-bg2.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100%;
+        }
+        &-bg3 {
+            background-image: url(../images/howtoplay/tutorial-bg3.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 100%;
+        }
+    }
+    // @include media-breakpoint-down(lg) {
+    //     padding-left: 30px;
+    // }
 }
