@@ -689,21 +689,13 @@ iframe {
   transform: scale(1.02, 1.02); }
 
 .landing-purchase {
-  position: relative;
-  height: 600px;
-  background-image: url(../images/landing/purchase-banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (max-width: 575.98px) {
-    .landing-purchase {
-      height: 400px; } }
+  position: relative; }
   .landing-purchase-text {
     position: absolute;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto 0;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -718,9 +710,13 @@ iframe {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 767.98px) {
+      .landing-purchase-text {
+        top: inherit;
+        bottom: 20%; } }
     @media (max-width: 575.98px) {
       .landing-purchase-text {
-        left: 0; } }
+        bottom: 15%; } }
 
 .about-container {
   background-image: url(../images/about/kv.png);
