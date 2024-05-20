@@ -1,0 +1,49 @@
+.teamMember {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+    &-col {
+        width: 15%;
+        min-width: 220px;
+        margin: 5px;
+        padding: 20px;
+        border-radius: 20px;
+        flex-grow: 1;
+        h2 {
+            color: white;
+            margin-bottom: 0px;
+        }
+        @include media-breakpoint-down(md) {
+            margin: 10px 0;
+        }
+    }
+    &-pic {
+        width: 100%;
+        text-align: center;
+    }
+    &-bg1 {
+        background-color: $color-darkPurple;
+    }
+    &-bg2 {
+        background-color: #20191F;
+    }
+    &-title {
+        color: $color-lightPurple;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    &-name {
+    }
+    &-icon {
+        text-align: right;
+        img {
+            width: 28px;
+        }
+    }
+    &-content {
+        color: #BDBDBD;
+    }
+}
