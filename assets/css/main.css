@@ -658,7 +658,7 @@ iframe {
   .landing-characters-item-btn {
     position: absolute;
     bottom: 0px;
-    left: 40px;
+    left: 22px;
     padding: 4px 12px;
     background-color: #CFC19B;
     color: #161117;
@@ -671,7 +671,7 @@ iframe {
     transition: 0.5s; }
     @media (max-width: 575.98px) {
       .landing-characters-item-btn {
-        bottom: 22px; } }
+        left: 22px; } }
   .landing-characters-item img {
     border-radius: 8px; }
 

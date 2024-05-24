@@ -220,7 +220,7 @@ iframe{
         &-btn {
             position: absolute;
             bottom: 0px;
-            left: 40px;
+            left: 22px;
             padding: 4px 12px;
             background-color: $color-second;
             color: $color-darkPurple;
@@ -230,7 +230,7 @@ iframe{
             opacity: 0.6;
             transition: 0.5s;
             @include media-breakpoint-down(sm) {
-                bottom: 22px;
+                left: 22px;
             }
         }
         img {
